@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/TopMenu.gd" type="Script" id=1]
+
+[node name="TopMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Home" type="Button" parent="GridContainer"]
+margin_right = 51.0
+margin_bottom = 20.0
+text = "Home"
+
+[node name="Quit" type="Button" parent="GridContainer"]
+margin_top = 24.0
+margin_right = 51.0
+margin_bottom = 44.0
+text = "Quit"
+
+[connection signal="button_down" from="GridContainer/Home" to="." method="_on_Home_button_down"]
+[connection signal="button_down" from="GridContainer/Quit" to="." method="_on_Quit_button_down"]
