@@ -9,6 +9,8 @@ func _on_StartProject_button_down():
 	$CenterContainer/StartProjectPop.visible = true
 func _on_LoadProject_button_down():
 	$CenterContainer/LoadProjectPop.visible = true
+	$CenterContainer/LoadProjectPop.rect_position = Vector2(gui.get_screen_width() / 2, gui.get_screen_start_pos().y)
+	$CenterContainer/LoadProjectPop.rect_size = gui.two_grid_size()
 func _on_ProjectName_text_entered(new_text):
 	var temp_str = "django-admin startproject {project_name}"
 	var fin_str = temp_str.format({"project_name": new_text})

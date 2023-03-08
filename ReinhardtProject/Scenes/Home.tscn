@@ -30,11 +30,22 @@ margin_top = 6.0
 margin_right = 78.0
 margin_bottom = 38.0
 
-[node name="ProjectName" type="LineEdit" parent="CenterContainer/StartProjectPop"]
-margin_left = 4.0
-margin_top = 4.0
-margin_right = 62.0
-margin_bottom = 28.0
+[node name="GridContainer" type="GridContainer" parent="CenterContainer/StartProjectPop"]
+margin_left = -12.0
+margin_top = -6.0
+margin_right = 28.0
+margin_bottom = 34.0
+
+[node name="Label" type="Label" parent="CenterContainer/StartProjectPop/GridContainer"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Project Name"
+
+[node name="ProjectName" type="LineEdit" parent="CenterContainer/StartProjectPop/GridContainer"]
+margin_left = 16.0
+margin_top = 10.0
+margin_right = 74.0
+margin_bottom = 34.0
 
 [node name="LoadProjectPop" type="FileDialog" parent="CenterContainer"]
 margin_left = -112.0
@@ -44,4 +55,4 @@ margin_bottom = 87.0
 
 [connection signal="button_down" from="CenterContainer/GridContainer/StartProject" to="." method="_on_StartProject_button_down"]
 [connection signal="button_down" from="CenterContainer/GridContainer/LoadProject" to="." method="_on_LoadProject_button_down"]
-[connection signal="text_entered" from="CenterContainer/StartProjectPop/ProjectName" to="." method="_on_ProjectName_text_entered"]
+[connection signal="text_entered" from="CenterContainer/StartProjectPop/GridContainer/ProjectName" to="." method="_on_ProjectName_text_entered"]
