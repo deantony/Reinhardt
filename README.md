@@ -4,6 +4,10 @@ Anthony Dean
 
 This program is helpful for Django developmental servers. 
 
+To use Reinhardt:
+1) Go to the "releases" section on Github.
+2) Download the .exe and the .pck files. 
+
 To Start a New Django Project:
 1) Run the program
 2) Click "Start Project"
