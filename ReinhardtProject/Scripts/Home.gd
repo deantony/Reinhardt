@@ -9,6 +9,8 @@ func _on_StartProject_button_down():
 	$CenterContainer/StartProjectLocation.visible = true
 	$CenterContainer/StartProjectLocation.rect_position = Vector2(gui.get_screen_width() / 2, gui.get_screen_start_pos().y)
 	$CenterContainer/StartProjectLocation.rect_size = gui.two_grid_size()
+	$CenterContainer/StartProjectPop/GridContainer.rect_position = Vector2(gui.get_screen_width() / 2, gui.get_screen_start_pos().y)
+	$CenterContainer/StartProjectPop/GridContainer.rect_size = gui.two_grid_size()
 func _on_LoadProject_button_down():
 	$CenterContainer/LoadProjectPop.visible = true
 	$CenterContainer/LoadProjectPop.rect_position = Vector2(gui.get_screen_width() / 2, gui.get_screen_start_pos().y)
