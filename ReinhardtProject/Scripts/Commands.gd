@@ -10,6 +10,7 @@ func os_cmd(directory, command):
 	var fin_str = temp_str.format({"directory": directory, "command": command})
 	pid = OS.execute("CMD.exe", ["/C", fin_str], true, command_output)
 	pid_list.append(pid)
+	print(command_output)
 	return pid
 func os_cmd_no_block(directory, command):
 	var temp_str = "cd {directory} && {command}"

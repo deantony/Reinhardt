@@ -25,14 +25,16 @@ margin_bottom = 44.0
 text = "Load Project"
 
 [node name="StartProjectPop" type="PopupPanel" parent="CenterContainer"]
-margin_left = 41.0
-margin_top = 18.0
-margin_right = 49.0
-margin_bottom = 26.0
+margin_left = 12.0
+margin_top = 6.0
+margin_right = 78.0
+margin_bottom = 38.0
 
 [node name="ProjectName" type="LineEdit" parent="CenterContainer/StartProjectPop"]
-margin_right = 58.0
-margin_bottom = 24.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 62.0
+margin_bottom = 28.0
 
 [node name="LoadProjectPop" type="FileDialog" parent="CenterContainer"]
 margin_left = -112.0

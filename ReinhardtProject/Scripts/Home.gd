@@ -17,4 +17,5 @@ func _on_ProjectName_text_entered(new_text):
 	temp_str = "Projects/{project_name}"
 	fin_str = temp_str.format({"project_name": new_text})
 	commands.set_current_directory(fin_str)
-	print(commands.os_cmd("Projects", "dir"))
+	get_tree().change_scene("res://Scenes/ProjectScreen.tscn")
+	
