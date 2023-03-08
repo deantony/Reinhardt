@@ -21,3 +21,13 @@ func _on_ProjectName_text_entered(new_text):
 	commands.set_current_directory(fin_str)
 	get_tree().change_scene("res://Scenes/ProjectScreen.tscn")
 	
+
+
+func _on_LoadProjectPop_dir_selected(dir):
+	$CenterContainer/LoadProjectPop.visible = false
+	var temp_str = []
+	for i in range(len(dir) - 6):
+		temp_str.append(dir[i + 6])
+	var fin_str = "".join(temp_str)
+	commands.set_current_directory(fin_str)
+	get_tree().change_scene("res://Scenes/ProjectScreen.tscn")
