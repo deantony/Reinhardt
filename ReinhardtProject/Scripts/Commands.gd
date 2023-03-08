@@ -23,6 +23,7 @@ func stop_server():
 		var fin_str = temp_str.format({"id": pid_list[i]})
 		os_cmd(get_current_directory(), fin_str)
 	pid_list.empty()
+
 func get_current_directory():
 	var config = ConfigFile.new()
 	config.load(path)
@@ -31,4 +32,3 @@ func set_current_directory(directory):
 	var config = ConfigFile.new()
 	config.set_value("Directory", "Current_Path", directory)
 	config.save(path)
-
